@@ -1,4 +1,4 @@
-function Spectrum(){
+function NoiseLine(){
 	this.name = "Noise Line";
 
 	this.noiseStep = 0.01;
@@ -54,7 +54,7 @@ function Spectrum(){
 		beginShape();
 		noFill();
 
-		stroke(0,255,0);
+		stroke(e,255-e,0);
 		strokeWeight(3);
 		//iterator for selecting frequency bin.
 		var currentBin = 0;
