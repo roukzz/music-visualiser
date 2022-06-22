@@ -52,8 +52,9 @@ function Needles() {
 				// ??
 				this.ticks((x+w/2), y+h,this.frequencyBins[currentBin] )
 
-				var energy = fourier.getEnergy(this.frequencyBins[currentBin]);
-
+				// var energy = fourier.getEnergy(this.frequencyBins[currentBin]);
+				var energy = fourier.getEnergy("bass");
+				console.log("ENERGY IN NEEDLES: "+ energy);
 				//add the needle
 				// ??
 				this.needle(energy,(x+w/2),y+h)
