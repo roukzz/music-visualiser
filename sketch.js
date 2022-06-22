@@ -22,7 +22,7 @@ function setup(){
 	 //create a new visualisation container and add visualisations
 	 vis = new Visualisations();
 	 vis.add(new NoiseLine());
-	 vis.add(new WavePattern());
+	 vis.add(new Ridge());
 	 vis.add(new Needles());
 
 }
