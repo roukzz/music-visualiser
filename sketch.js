@@ -23,7 +23,7 @@ function setup(){
 	 vis = new Visualisations();
 	 vis.add(new NoiseLine());
 	 vis.add(new Ridge());
-	 vis.add(new Needles());
+	 vis.add(new Disco());
 
 }
 
