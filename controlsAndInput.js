@@ -45,8 +45,10 @@ function ControlsAndInput(){
 	//draws the playback button and potentially the menu
 	this.draw = function(){
 		push();
+
 		fill("white");
 		stroke("black");
+
 		strokeWeight(2);
 		textSize(34);
 
@@ -55,9 +57,11 @@ function ControlsAndInput(){
 		//only draw the menu if menu displayed is set to true.
 		if(this.menuDisplayed){
 
-			text("Select a visualisation:", 100, 30);
+			text("Select a visualisation(press 1, 2 or 3 key):", 100, 30);
 			// console.log("call menu method");
 			this.menu();
+		}else{
+			text("Press Space for menu options",100,30)
 		}
 		pop();
 

@@ -15,8 +15,7 @@ function Disco() {
 		push();
 		//create an array amplitude values from the fft.
 		var spectrum = fourier.analyze();
-		//iterator for selecting frequency bin.
-		var currentBin = 0;
+
 
 
 		var randomNumber = Math.floor(Math.random() * (3 + 1));

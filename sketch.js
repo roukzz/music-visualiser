@@ -29,6 +29,7 @@ function setup(){
 
 function draw(){
 	background(0);
+	
 	//draw the selected visualisation
 	vis.selectedVisual.draw();
 	//draw the controls on top.
