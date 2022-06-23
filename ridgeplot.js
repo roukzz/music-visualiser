@@ -4,6 +4,7 @@ function Ridge(){
 	this.name = "Rigde";
 
 	// array of lines
+	// 2d array
 	var output = [];
 
 	var startX = width/5;
@@ -30,11 +31,13 @@ function Ridge(){
 
 		var randomNumber = Math.floor(Math.random() * (3 + 1));
 
+		// get random energy depending on a random frequency type
 		var e = fourier.getEnergy(this.frequencyBins[randomNumber]);
 
+		// change color
 		stroke(255-e,e,count%255);
 
-		2
+
 		strokeWeight(2)
 
 		noFill();
@@ -47,10 +50,12 @@ function Ridge(){
 		for (var i = 0 ; i< output.length; i++){
 			var line = output[i]
 			beginShape();
+
+			// draw the line from the 2d array
 			for (var j = 0 ; j < line.length; j++ ){
 				line[j].y -=speed;
 				vertex(line[j].x,line[j].y)
-				
+
 			}
 			endShape()
 			if (line[0].y < endY){
@@ -64,6 +69,7 @@ function Ridge(){
 	};
 
 
+// add a new line to the output 2d array
 this.addWave=function(){
 
 		//calculate the waveform from the fft.
