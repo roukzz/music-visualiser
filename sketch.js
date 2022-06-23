@@ -23,12 +23,13 @@ function setup(){
 	 vis = new Visualisations();
 	 vis.add(new NoiseLine());
 	 vis.add(new Ridge());
-	 vis.add(new Needles());
+	 vis.add(new Disco());
 
 }
 
 function draw(){
 	background(0);
+	
 	//draw the selected visualisation
 	vis.selectedVisual.draw();
 	//draw the controls on top.
